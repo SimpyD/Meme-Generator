@@ -1,0 +1,97 @@
+*{
+  box-sizing: border-box;
+  font-family: 'Karla', sans-serif;
+}
+
+.navbar--outbox{
+  width: 100%;
+  height: 100px;
+  display: flex;
+  background-color: rgb(97, 38, 151);
+  color: white;
+  padding: 10px;
+  
+}
+
+.navbar--image{
+  width: 100px;
+  height: 80px;
+  margin-left: 30px;
+}
+
+.navbar--webname{
+  margin-right: auto;
+  
+}
+main{
+  margin: 15px;
+}
+.form{
+  display: grid;
+  /* 40 px determines the breadth of the row */
+  /* we are writing two times 1fr mean we allow two boxes in a row */
+  grid-template: 40px 40px / 1fr 1fr;
+  gap: 15px ;
+}
+
+.form--btn{
+  /* -1 to 1 signifies we want the row from start to end */
+  grid-column: 1/-1;
+  border-radius: 8px;
+  color: white;
+  font-weight: bolder;
+  font-size: 15px;
+  background-color:  rgb(97, 38, 151);
+  border: none;
+  cursor: pointer;
+}
+
+.form--input{
+  border-radius: 7px;
+}
+
+.meme--image--div{
+  /* border: 2px solid red; */
+  margin: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.meme--image{
+  max-width: 100%;
+  border: 2px solid black;
+}
+
+.meme--text{
+  position: absolute;
+  width: 80%;
+    text-align: center;
+    
+    margin: 15px 0;
+    padding: 0 5px;
+    font-family: impact, sans-serif;
+    font-size: 2em;
+    text-transform: uppercase;
+    color: white;
+    letter-spacing: 1px;
+    text-shadow:
+        2px 2px 0 #000,
+        -2px -2px 0 #000,
+        2px -2px 0 #000,
+        -2px 2px 0 #000,
+        0 2px 0 #000,
+        2px 0 0 #000,
+        0 -2px 0 #000,
+        -2px 0 0 #000,
+        2px 2px 5px #000;
+}
+
+.bottom{
+  bottom: 0;
+}
+
+.top{
+  top : 0;
+}
